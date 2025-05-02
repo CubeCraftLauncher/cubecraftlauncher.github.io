@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial';
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+h1 {
+    font-family: 'Arial Black', sans-serif;
+    text-align: center;
+    font-size: clamp(14px, 14vw, 46px);
+    color: white;
+
+    opacity: 0;
+    transform: translateY(-70px);
+    animation: title-entrar 2s ease-out forwards;
+    z-index: 1;
+}
+@keyframes title-entrar {
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+h3{
+    text-align: center;
+    font-size: clamp(10px, 8vw, 24px);
+    font-weight: normal;
+    padding: 20px;
+
+    font-family: 'Arial', sans-serif
+}
+
+h4{
+    text-align: center;
+    font-size: clamp(10px, 8vw, 24px);
+    font-weight: normal;
+    padding: 20px;
+
+    font-family: 'Arial Black', sans-serif
+}
+
+
+
+p{
+    text-align: center;
+    font-size: clamp(8px, 5vw, 16px);
+    font-weight: normal;
+    padding: 15px;
+}
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url(Images/background.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+.hero-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.5; /* Cuanto más alto, más oscuro */
+    pointer-events: none; /* Para que no bloquee clics */
+}
+
+
+.hero img{
+    height: 100px;
+    z-index: 1;
+
+    opacity: 0;
+    animation: img-entrar 2s ease-out forwards;
+}
+@keyframes img-entrar {
+    to{
+        opacity: 1;
+    }
+}
+
+
+.div1{
+    background-color: aqua;
+    gap: 10px;
+    
+}
