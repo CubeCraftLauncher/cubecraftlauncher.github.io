@@ -55,13 +55,15 @@ p{
     flex-direction: column;
     gap: 30px;
 
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url(Images/background.jpg);
     background-position: center;
     background-attachment: fixed;
 }
 .hero .title{
     height: auto;
-    width: clamp(70px, 80vw, 700px);
+    width: clamp(70px, 80vw, 900px);
 
 
     opacity: 0;
