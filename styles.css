@@ -201,3 +201,64 @@ p{
     filter: drop-shadow(0 4px 18px rgba(0, 0, 0, 1));
     width: clamp(60px, 80vw, 700px);
 }
+
+
+.descarga{
+    width: 100%;
+    height: auto;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #383838;
+    flex-direction: column;
+}
+
+
+.descargar-tt{
+    width: clamp(10px, 65vw, 700px);
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 1));
+}
+
+.opciones-descarga{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin: 50px;
+    background: linear-gradient(45deg, rgb(177, 82, 221), rgb(62, 48, 184));
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+
+.opciones-descarga a{
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #6a5acd, #8a79e0);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.github-bt{
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #6a5acd, #8a79e0);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.opciones-descarga a:hover {
+    transform: scale(1.07);
+    background: linear-gradient(135deg, #5a4bcf, #7a69d0);
+}
