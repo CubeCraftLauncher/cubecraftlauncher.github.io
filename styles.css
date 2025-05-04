@@ -1,7 +1,9 @@
-* {
-    box-sizing: border-box;
+html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
 
 body {
     font-family: 'Arial';
@@ -22,19 +24,15 @@ h3{
     text-align: center;
     font-size: clamp(10px, 8vw, 24px);
     font-weight: normal;
-    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-top: 30px;
 
     font-family: 'Arial', sans-serif
 }
 
-h4{
-    text-align: center;
-    font-size: clamp(10px, 8vw, 24px);
-    font-weight: normal;
-    padding: 20px;
 
-    font-family: 'Arial Black', sans-serif
-}
 
 
 
@@ -42,7 +40,9 @@ p{
     text-align: center;
     font-size: clamp(8px, 5vw, 16px);
     font-weight: normal;
-    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
 }
 
 .hero{
@@ -235,6 +235,22 @@ p{
 
 
 .opciones-descarga a{
+    text-align: center;
+}
+
+.opciones-descarga .instalador{
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #6a5acd, #8a79e0);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.opciones-descarga .portable{
     display: inline-block;
     padding: 12px 24px;
     background: linear-gradient(135deg, #6a5acd, #8a79e0);
@@ -249,7 +265,7 @@ p{
 .github-bt{
     display: inline-block;
     padding: 12px 24px;
-    background: linear-gradient(135deg, #6a5acd, #8a79e0);
+    background: linear-gradient(135deg, #34b44f, #1c6459);
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -258,7 +274,51 @@ p{
     box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
 }
 
-.opciones-descarga a:hover {
+.opciones-descarga .instalador:hover {
     transform: scale(1.07);
     background: linear-gradient(135deg, #5a4bcf, #7a69d0);
+}
+.opciones-descarga .portable:hover {
+    transform: scale(1.07);
+    background: linear-gradient(135deg, #5a4bcf, #7a69d0);
+}
+.opciones-descarga .github-bt:hover {
+    transform: scale(1.07);
+    background: linear-gradient(135deg, #2da046, #13463e);
+}
+
+
+.opciones-redes{
+    background: linear-gradient(45deg, rgb(177, 82, 221), rgb(62, 48, 184));
+    margin: 50px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    flex-direction: column;
+}
+.redes-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.redes-grid a{
+    display: flex;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #6a5acd, #8a79e0);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+}
+.redes-grid a:hover {
+    transform: scale(1.07);
+    background: linear-gradient(135deg, #5a4bcf, #7a69d0);
+}
+.redes-grid a img {
+    max-height: 35px;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.7));
 }
