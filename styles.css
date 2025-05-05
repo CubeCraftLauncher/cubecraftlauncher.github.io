@@ -203,7 +203,7 @@ p{
 }
 
 
-.descarga{
+.tutorial{
     width: 100%;
     height: auto;
     padding: 60px;
@@ -211,6 +211,36 @@ p{
     align-items: center;
     justify-content: center;
     background-color: #383838;
+    flex-direction: column;
+}
+
+.tutorial-bt{
+    display: inline-block;
+    margin-top: 50px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #6a5acd, #8a79e0);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
+}
+.tutorial-bt:hover {
+    transform: scale(1.07);
+    background: linear-gradient(135deg, #5a4bcf, #7a69d0);
+}
+
+
+
+.descarga{
+    width: 100%;
+    height: auto;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
     flex-direction: column;
 }
 
