@@ -238,19 +238,24 @@ p{
     text-align: center;
 }
 
-.opciones-descarga .instalador{
-    display: inline-block;
+.instalador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: clamp(10px, 30vw, 330px);
     padding: 12px 24px;
-    background: linear-gradient(135deg, #6a5acd, #8a79e0);
+    background: linear-gradient(135deg, #34b44f, #1c6459);
     color: white;
     text-decoration: none;
     font-weight: bold;
     border-radius: 50px;
     transition: transform 0.3s ease;
     box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
 }
 
-.opciones-descarga .portable{
+.portable{
     display: inline-block;
     padding: 12px 24px;
     background: linear-gradient(135deg, #6a5acd, #8a79e0);
@@ -265,7 +270,7 @@ p{
 .github-bt{
     display: inline-block;
     padding: 12px 24px;
-    background: linear-gradient(135deg, #34b44f, #1c6459);
+    background: linear-gradient(135deg, #6a5acd, #8a79e0);
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -276,7 +281,7 @@ p{
 
 .opciones-descarga .instalador:hover {
     transform: scale(1.07);
-    background: linear-gradient(135deg, #5a4bcf, #7a69d0);
+    background: linear-gradient(135deg, #2da046, #13463e);
 }
 .opciones-descarga .portable:hover {
     transform: scale(1.07);
@@ -284,7 +289,7 @@ p{
 }
 .opciones-descarga .github-bt:hover {
     transform: scale(1.07);
-    background: linear-gradient(135deg, #2da046, #13463e);
+    background: linear-gradient(135deg, #5a4bcf, #7a69d0);
 }
 
 
