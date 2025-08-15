@@ -95,8 +95,11 @@ p{
 
 
 .hero .icon{
-    height: 150px;
+    height: 250px;
     z-index: 1;
+
+    image-rendering: pixelated;
+    image-rendering: crisp-edges; /* por compatibilidad */
 
 
     opacity: 0;
